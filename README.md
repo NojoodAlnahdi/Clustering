@@ -27,16 +27,6 @@ The project utilizes four different datasets for clustering:
 4. **Noisy Circles**: A dataset with two concentric circles, further challenging the clustering algorithm.
 
 
-## Code Explanation
-**KMeans Class**
-- Initialization: Sets up the number of clusters and initializes parameters.
-- _initialize_centroids: Randomly selects initial centroids from the dataset.
-- _assign_clusters: Assigns each data point to the nearest centroid.
-- _update_centroids: Recalculates centroids as the mean of assigned data points.
-- _predict: Returns the final cluster assignments.
-- _plot: Visualizes the clustering results.
-- fit: Executes the K-Means algorithm by iteratively assigning clusters and updating centroids.
-
 **Evaluation Metrics**
 The project includes validation of the clustering results using three metrics:
 
@@ -44,8 +34,8 @@ F-measure: Balances precision and recall to evaluate cluster quality.
 Normalized Mutual Information (NMI): Measures the agreement between true labels and predicted clusters.
 Rand Index: Assesses the similarity between the predicted and actual labels.
 
-## implementation
-For implementation, please refer to the uploaded Notebook (.ipynb).
+## implementation and Code Explanation
+For a detailed explanation and implementation, please refer to the uploaded Notebook (.ipynb).
 
 ## Results
 The clustering performance for each dataset is summarized in a table format, providing insights into the effectiveness of the K-Means algorithm on different types of data distributions.
