@@ -27,13 +27,6 @@ The project utilizes four different datasets for clustering:
 4. **Noisy Circles**: A dataset with two concentric circles, further challenging the clustering algorithm.
 
 
-**Evaluation Metrics**
-The project includes validation of the clustering results using three metrics:
-
-F-measure: Balances precision and recall to evaluate cluster quality.
-Normalized Mutual Information (NMI): Measures the agreement between true labels and predicted clusters.
-Rand Index: Assesses the similarity between the predicted and actual labels.
-
 ## implementation and Code Explanation
 For a detailed explanation and implementation, please refer to the uploaded Notebook (.ipynb).
 
