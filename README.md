@@ -26,18 +26,20 @@ The project utilizes four different datasets for clustering:
 3. **Noisy Moons**: A dataset with two interleaving half circles, adding complexity due to noise.
 4. **Noisy Circles**: A dataset with two concentric circles, further challenging the clustering algorithm.
 
-## Getting Started
 
-### Prerequisites
+## Code Explanation
+**KMeans Class**
+Initialization: Sets up the number of clusters and initializes parameters.
+_initialize_centroids: Randomly selects initial centroids from the dataset.
+_assign_clusters: Assigns each data point to the nearest centroid.
+_update_centroids: Recalculates centroids as the mean of assigned data points.
+_predict: Returns the final cluster assignments.
+_plot: Visualizes the clustering results.
+fit: Executes the K-Means algorithm by iteratively assigning clusters and updating centroids.
 
-Make sure you have the following libraries installed:
+**Evaluation Metrics**
+The project includes validation of the clustering results using three metrics:
 
-- NumPy
-- Pandas
-- Matplotlib
-- scikit-learn
-
-You can install the required libraries using pip:
-
-```bash
-pip install numpy pandas matplotlib scikit-learn
+F-measure: Balances precision and recall to evaluate cluster quality.
+Normalized Mutual Information (NMI): Measures the agreement between true labels and predicted clusters.
+Rand Index: Assesses the similarity between the predicted and actual labels.
